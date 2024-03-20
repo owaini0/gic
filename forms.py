@@ -16,4 +16,5 @@ class DataCollectionForm(FlaskForm):
                                        ('Satisfied', 'Satisfied'),
                                        ('Very Satisfied', 'Very Satisfied')])
     improvement = TextAreaField('Suggestions for improvement:')  # Text area for improvement suggestions
-    submit = SubmitField('Submit')  # Submit button
+    # Submit button
+    submit = SubmitField('Submit')

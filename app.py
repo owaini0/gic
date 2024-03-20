@@ -38,4 +38,4 @@ def submitted():
 
 # Running the Flask app
 if __name__ == '__main__':
-    app.run(debug=True, port=0)  # Running the app in debug mode and assigning a random port
+    app.run(debug=True)
