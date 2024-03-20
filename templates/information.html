@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GIC Data Collection Information</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/information.css') }}">
+<title>GIC Data Collection Information</title> <!-- Title of the webpage -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/information.css') }}"> <!-- Linking external CSS file -->
 </head>
 <body>
+     <!-- Navigation bar -->
      <div class="navbar">
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('information') }}">Information</a>
-        <a href="{{ url_for('data_collection') }}">Data Collection</a>
+        <a href="{{ url_for('index') }}">Home</a> <!-- Link to Home page -->
+        <a href="{{ url_for('information') }}">Information</a> <!-- Link to Information page -->
+        <a href="{{ url_for('data_collection') }}">Data Collection</a> <!-- Link to Data Collection page -->
         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo" draggable="false"> <!-- Logo -->
     </div>
+
     <header>
         <h1>Why We Collect Data on Student Progress at GIC</h1> <!-- Header with main title -->
     </header>

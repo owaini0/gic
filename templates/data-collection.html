@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GIC Data Collection</title>
+<meta charset="UTF-8"> <!-- Character encoding declaration -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport declaration -->
+<title>GIC Data Collection</title> <!-- Title of the webpage -->
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/data-collection.css') }}">  <!-- Linking to external CSS file -->
 </head>
 <body>
+     <!-- Navigation bar -->
      <div class="navbar">
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('information') }}">Information</a>
-        <a href="{{ url_for('data_collection') }}">Data Collection</a>
+        <a href="{{ url_for('index') }}">Home</a> <!-- Link to Home page -->
+        <a href="{{ url_for('information') }}">Information</a> <!-- Link to Information page -->
+        <a href="{{ url_for('data_collection') }}">Data Collection</a> <!-- Link to Data Collection page -->
         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo" draggable="false"> <!-- Logo -->
     </div>
 
@@ -18,36 +19,36 @@
     <h2>GIC Student Progress Questionnaire</h2>
 
     <!-- Form for data collection -->
-    <form action="{{ url_for('data_collection') }}" method="post">
+    <form action="{{ url_for('data_collection') }}" method="post"> <!-- Form action and method -->
         <div class="form-group">
-            {{ form.name.label }}<br>
-            {{ form.name }}<br><br>
+            {{ form.name.label }}<br> <!-- Label for name input -->
+            {{ form.name }}<br><br> <!-- Input field for name -->
 
-            {{ form.student_number.label }}<br>
-            {{ form.student_number}}<br><br>
+            {{ form.student_number.label }}<br> <!-- Label for student number input -->
+            {{ form.student_number}}<br><br> <!-- Input field for student number -->
 
-            {{ form.email.label }}<br>
-            {{ form.email}}<br><br>
+            {{ form.email.label }}<br> <!-- Label for email input -->
+            {{ form.email}}<br><br> <!-- Input field for email -->
 
-            {{ form.grades.label }}<br>
-            {{ form.grades}}<br><br>
+            {{ form.grades.label }}<br> <!-- Label for grades input -->
+            {{ form.grades}}<br><br> <!-- Input field for grades -->
 
-            {{ form.satisfaction.label }}<br>
+            {{ form.satisfaction.label }}<br> <!-- Label for satisfaction input -->
             <div class="options">
-                {{ form.satisfaction}}<br><br>
+                {{ form.satisfaction}}<br><br> <!-- Input field for satisfaction -->
             </div>
         </div>
 
         <br><br>
-        {{ form.improvement.label }}<br>
-        {{ form.improvement}}<br><br>
+        {{ form.improvement.label }}<br> <!-- Label for improvement input -->
+        {{ form.improvement}}<br><br> <!-- Input field for improvement -->
 
-        {{ form.submit }}<br>
+        {{ form.submit }}<br> <!-- Submit button -->
     </form>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Glasgow International College. All rights reserved.</p>
     </footer>
 </body>
 </html>
-

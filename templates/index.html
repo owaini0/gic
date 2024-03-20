@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GIC</title>
+<meta charset="UTF-8"> <!-- Character encoding declaration -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport declaration -->
+<title>GIC</title> <!-- Title of the webpage -->
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}"> <!-- Linking external CSS file -->
 </head>
 <body>
+     <!-- Navigation bar -->
      <div class="navbar">
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('information') }}">Information</a>
-        <a href="{{ url_for('data_collection') }}">Data Collection</a>
+        <a href="{{ url_for('index') }}">Home</a> <!-- Link to Home page -->
+        <a href="{{ url_for('information') }}">Information</a> <!-- Link to Information page -->
+        <a href="{{ url_for('data_collection') }}">Data Collection</a> <!-- Link to Data Collection page -->
         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo" draggable="false"> <!-- Logo -->
     </div>
+
     <div class="contect-header"> <!-- Header section -->
-        <h1>Glasgow International College</h1>
+        <h1>Glasgow International College</h1> <!-- Main heading -->
         <div class="contect">
-            <p>Welcome to the <strong>Glasgow International College (GIC)</strong> Progress Platform. We're excited to provide you with a centralized hub for tracking and assessing students' progress effectively.</p>
+            <p>Welcome to the <strong>Glasgow International College (GIC)</strong> Progress Platform. We're excited to provide you with a centralized hub for tracking and assessing students' progress effectively.</p> <!-- Introductory content -->
         </div>
     </div> <!-- Close contect-header here -->
+
     <div class="overview-header"> <!-- Overview section -->
-        <h2>Website overview</h2>
+        <h2>Website overview</h2> <!-- Subheading -->
         <div class="overview">
-            <p>Users can expect to navigate through these pages to learn about the website's offerings, access detailed information, and potentially provide relevant data. Each page serves a specific purpose in providing a comprehensive and user-friendly experience.</p>
-            <h3>What to expect</h3>
-            <p>Explore our platform to understand the importance and methodology behind data collection at GIC. Navigate through our information section to gain insights into how student data contributes to enhancing educational outcomes. And don't forget to participate in our data collection process to play a vital role in shaping the future of education.</p>
-            <h3>Get Started:</h3>
-            <p>Ready to dive in? Click below to learn more about our mission and the significance of data collection at GIC. <a href="/information" class="learn">Learn More?</a></p>
+            <p>Users can expect to navigate through these pages to learn about the website's offerings, access detailed information, and potentially provide relevant data. Each page serves a specific purpose in providing a comprehensive and user-friendly experience.</p> <!-- Overview content -->
+            <h3>What to expect</h3> <!-- Subheading -->
+            <p>Explore our platform to understand the importance and methodology behind data collection at GIC. Navigate through our information section to gain insights into how student data contributes to enhancing educational outcomes. And don't forget to participate in our data collection process to play a vital role in shaping the future of education.</p> <!-- More details about what users can expect -->
+            <h3>Get Started:</h3> <!-- Subheading -->
+            <p>Ready to dive in? Click below to learn more about our mission and the significance of data collection at GIC. <a href="/information" class="learn">Learn More?</a></p> <!-- Call to action to learn more -->
         </div>
     </div>
 
     <footer> <!-- Footer section -->
-        <p>&copy; 2024 Glasgow International College. All rights reserved.</p>
+        <p>&copy; 2024 Glasgow International College. All rights reserved.</p> <!-- Copyright information -->
     </footer>
 </body>
 </html>
