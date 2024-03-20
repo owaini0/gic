@@ -1,0 +1,36 @@
+/* Body styles */
+body {
+    font-family: 'Georgia', serif; /* Use Georgia font for headings */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #ffffff; /* White background */
+}
+
+/* Footer styles */
+footer {
+    position: absolute; /* Position the footer absolutely */
+    bottom: auto; /* Override bottom positioning */
+    left: 0; /* Align footer to the left */
+    width: 100%; /* Full width */
+    background-color: #007bff; /* Blue background */
+    color: #ffeeee; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 10px 0; /* Padding for content inside the footer */
+}
+
+/* Container styles */
+.container {
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 50px 10px; /* Padding for content inside the container */
+}
+
+/* Content styles */
+.content {
+    text-align: center; /* Center-align text */
+    margin-bottom: 20%; /* Bottom margin */
+}
+
+/* Heading styles */
+h1 {
+    color: #0056b3; /* Blue color for h1 */
+}

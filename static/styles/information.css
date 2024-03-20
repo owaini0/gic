@@ -1,0 +1,112 @@
+/* Body styles */
+body {
+    font-family: 'Georgia', serif; /* Use Georgia font for headings */
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/texture.png"); /* Background image */
+}
+
+/* Footer styles */
+footer {
+    position: absolute; /* Position the footer absolutely */
+    margin-top: 7%; /* Margin from the top */
+    bottom: auto; /* Override bottom positioning */
+    left: 0;
+    width: 100%;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 10px 0; /* Padding for content inside the footer */
+    z-index: 9; /* Ensure footer is on top of other content */
+}
+
+/* Navbar styles */
+.navbar {
+    position: relative; /* Position the navbar relative to its container */
+    display: flex; /* Display as flex container */
+    align-items: center; /* Align items vertically */
+    background-color: #ffffff; /* White background */
+    padding: 0px 20px; /* Padding around navbar content */
+    text-align: left; /* Text alignment */
+}
+
+.navbar a {
+    color: #000000; /* Black text color for links */
+    text-decoration: none; /* Remove default underline */
+    margin: 0 15px; /* Margin around links */
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.logo {
+    position: relative; /* Position logo relative to its container */
+    margin-left: auto; /* Margin on left side */
+    margin-right: 5%; /* Margin on right side */
+    width: 20%; /* Width of logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Header styles */
+header {
+    font-size: 15px; /* Font size */
+    position: relative; /* Establishes a positioning context for the header */
+    z-index: 2; /* Ensure header appears above other content */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Text alignment */
+    padding: 20px 0; /* Padding around header content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for header */
+    background-color: #007bff; /* Blue background */
+    background-size: cover; /* Ensure background image covers entire header */
+    background-position: center; /* Center background image */
+    overflow: hidden; /* Ensure noise texture doesn't overflow */
+}
+
+main {
+    position: relative; /* Ensure proper stacking context */
+    z-index: 1; /* Make sure main content is below the header */
+    background-color: transparent; /* Transparent background color for the content */
+    padding: 20px; /* Padding around main content */
+}
+
+section {
+    margin-bottom: 0; /* Remove default margin bottom for sections */
+}
+
+h1 {
+    color: #333; /* Dark gray text color for h1 */
+}
+
+h2 {
+    color: #333; /* Dark gray text color for h2 */
+    margin-top: 5%; /* Top margin for h2 */
+    margin-bottom: 10px; /* Bottom margin for h2 */
+}
+
+ul {
+    color: #555; /* Medium gray text color for lists */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 5%; /* Bottom margin for lists */
+}
+
+/* Button styles */
+.button {
+    display: inline-block; /* Display as inline-block */
+    padding: 10px 40px; /* Padding for button */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 5px; /* Border radius for rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor type */
+    font-weight: bold; /* Bold font weight */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for button */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIC Data Collection Information</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/information.css') }}">
+</head>
+<body>
+     <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('information') }}">Information</a>
+        <a href="{{ url_for('data_collection') }}">Data Collection</a>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo" draggable="false"> <!-- Logo -->
+    </div>
+    <header>
+        <h1>Why We Collect Data on Student Progress at GIC</h1> <!-- Header with main title -->
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction</h2> <!-- Section title -->
+            <p>At Glasgow International College (GIC), we believe in the power of data to drive improvements in education and enhance the overall student experience. The collection of data on student progress plays a crucial role in achieving these goals.</p> <!-- Introduction paragraph -->
+        </section>
+
+        <section>
+            <h2>Purposes and Benefits of Data Collection</h2> <!-- Section title -->
+            <p>There are several key reasons why we collect data on student progress at GIC:</p> <!-- Purpose of data collection paragraph -->
+            <ul> <!-- Unordered list of purposes/benefits -->
+                <li><strong>Monitoring Student Performance:</strong> Data allows us to track the academic performance of students across various subjects and programs. This enables us to identify areas of strength and areas that may require additional support.</li> <!-- First purpose -->
+                <li><strong>Identifying Trends and Patterns:</strong> By analyzing student data over time, we can identify trends and patterns that may impact teaching methods, curriculum development, and student support services.</li> <!-- Second purpose -->
+                <li><strong>Improving Teaching and Learning:</strong> Data collection provides valuable insights into the effectiveness of teaching methods and curriculum design. This information allows us to make informed decisions about instructional strategies and course content to better meet the needs of our students.</li> <!-- Third purpose -->
+                <li><strong>Enhancing Student Support Services:</strong> Data helps us identify students who may benefit from additional support services, such as tutoring, counseling, or academic advising. By providing targeted support, we can help students overcome challenges and succeed academically.</li> <!-- Fourth purpose -->
+                <li><strong>Assessing Program Effectiveness:</strong> Data allows us to evaluate the effectiveness of our academic programs and initiatives. By assessing student outcomes, we can make evidence-based decisions to improve program quality and relevance.</li> <!-- Fifth purpose -->
+            </ul>
+        </section>
+        <a href="/data-collection" class="button">Fill out your Questionnaire now</a> <!-- Call to action button -->
+
+        <section>
+            <h2>Our Commitment to Student Privacy and Confidentiality</h2> <!-- Section title -->
+            <p>At GIC, we are committed to protecting the privacy and confidentiality of student data. All data collected is securely stored and only used for purposes directly related to improving educational outcomes and student experience. We adhere to strict data protection policies and comply with applicable laws and regulations.</p> <!-- Privacy commitment paragraph -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Glasgow International College. All rights reserved.</p> <!-- Footer -->
+    </footer>
+
+</body>
+</html>

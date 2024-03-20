@@ -1,0 +1,87 @@
+/* Body styles */
+body {
+    font-family: 'Georgia', serif; /* Serif font for headings */
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/texture.png"); /* Background image */
+}
+
+/* Footer styles */
+footer {
+    position: absolute; /* Positioning */
+    margin-top: 7%; /* Margin from the top */
+    bottom: auto; /* Reset bottom position */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    background-color: #007bff; /* Background color */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Padding */
+    z-index: 9; /* Ensure footer is on top of other content */
+}
+
+/* Navbar styles */
+.navbar {
+    position: relative; /* Positioning */
+    display: flex; /* Flex layout */
+    align-items: center; /* Align items */
+    padding: 0px 20px; /* Padding */
+    text-align: left; /* Align text to left */
+    background-color: #f0f0f0;
+}
+
+.navbar a {
+    color: #000000; /* Text color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Margin */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Hover color */
+}
+
+.logo {
+    position: relative; /* Positioning */
+    margin-left: auto; /* Margin left */
+    margin-right: 5%; /* Margin right */
+    width: 20%; /* Width */
+    height: auto; /* Auto height */
+}
+
+/* Styling for header sections */
+.contect-header, .overview-header {
+    padding: 21px 0; /* Padding */
+    text-align: center; /* Center align text */
+    color: #002147; /* Dark blue, a common collegiate color */
+}
+
+/* Styling for content within header sections */
+.contect, .overview {
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center align */
+    padding: 0 20px; /* Padding */
+}
+
+/* Styling for paragraphs within content */
+.contect p, .overview p {
+    line-height: 1.6; /* Line height */
+    color: #333; /* Dark grey for readability */
+}
+
+/* Styling for headings */
+h1, h2, h3 {
+    color: #333; /* Dark blue */
+    margin-bottom: 20px; /* Margin bottom */
+}
+
+/* Styling for Learn More link */
+.learn {
+    color: #007bff; /* White text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block display */
+}
+
+.learn:hover {
+    text-decoration: underline; /* Remove underline on hover */
+}

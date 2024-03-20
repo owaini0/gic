@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIC</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}"> <!-- Linking external CSS file -->
+</head>
+<body>
+     <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('information') }}">Information</a>
+        <a href="{{ url_for('data_collection') }}">Data Collection</a>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo" draggable="false"> <!-- Logo -->
+    </div>
+    <div class="contect-header"> <!-- Header section -->
+        <h1>Glasgow International College</h1>
+        <div class="contect">
+            <p>Welcome to the <strong>Glasgow International College (GIC)</strong> Progress Platform. We're excited to provide you with a centralized hub for tracking and assessing students' progress effectively.</p>
+        </div>
+    </div> <!-- Close contect-header here -->
+    <div class="overview-header"> <!-- Overview section -->
+        <h2>Website overview</h2>
+        <div class="overview">
+            <p>Users can expect to navigate through these pages to learn about the website's offerings, access detailed information, and potentially provide relevant data. Each page serves a specific purpose in providing a comprehensive and user-friendly experience.</p>
+            <h3>What to expect</h3>
+            <p>Explore our platform to understand the importance and methodology behind data collection at GIC. Navigate through our information section to gain insights into how student data contributes to enhancing educational outcomes. And don't forget to participate in our data collection process to play a vital role in shaping the future of education.</p>
+            <h3>Get Started:</h3>
+            <p>Ready to dive in? Click below to learn more about our mission and the significance of data collection at GIC. <a href="/information" class="learn">Learn More?</a></p>
+        </div>
+    </div>
+
+    <footer> <!-- Footer section -->
+        <p>&copy; 2024 Glasgow International College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIC Data Collection</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/data-collection.css') }}">  <!-- Linking to external CSS file -->
+</head>
+<body>
+     <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('information') }}">Information</a>
+        <a href="{{ url_for('data_collection') }}">Data Collection</a>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo" draggable="false"> <!-- Logo -->
+    </div>
+
+    <!-- Heading for the form -->
+    <h2>GIC Student Progress Questionnaire</h2>
+
+    <!-- Form for data collection -->
+    <form action="{{ url_for('data_collection') }}" method="post">
+        <div class="form-group">
+            {{ form.name.label }}<br>
+            {{ form.name }}<br><br>
+
+            {{ form.student_number.label }}<br>
+            {{ form.student_number}}<br><br>
+
+            {{ form.email.label }}<br>
+            {{ form.email}}<br><br>
+
+            {{ form.grades.label }}<br>
+            {{ form.grades}}<br><br>
+
+            {{ form.satisfaction.label }}<br>
+            <div class="options">
+                {{ form.satisfaction}}<br><br>
+            </div>
+        </div>
+
+        <br><br>
+        {{ form.improvement.label }}<br>
+        {{ form.improvement}}<br><br>
+
+        {{ form.submit }}<br>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Glasgow International College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

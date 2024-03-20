@@ -1,0 +1,156 @@
+/* Body styles */
+body {
+    font-family: 'Georgia', serif; /* Set font family */
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/texture.png"); /* Set background image */
+}
+
+/* Footer styles */
+footer {
+    position: absolute; /* Positioning */
+    margin-top: 7%; /* Margin from the top */
+    bottom: auto; /* Reset bottom position */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    background-color: #007bff; /* Background color */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Padding */
+    z-index: 9; /* z-index */
+}
+
+/* Navbar styles */
+.navbar {
+    position: relative; /* Positioning */
+    display: flex; /* Flex layout */
+    align-items: center; /* Align items */
+    background-color: #ffffff; /* Background color */
+    padding: 0px 20px; /* Padding */
+    text-align: left; /* Align text to left */
+}
+
+.navbar a {
+    color: #000000; /* Text color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Margin */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Hover color */
+}
+
+.logo {
+    position: relative; /* Positioning */
+    margin-left: auto; /* Margin left */
+    margin-right: 5%; /* Margin right */
+    width: 20%; /* Width */
+    height: auto; /* Auto height */
+}
+
+form {
+    padding: 20px; /* Padding */
+}
+
+h2 {
+    font-size: 30px; /* Font size */
+    margin-top: 0; /* Margin top */
+    margin-bottom: 10px; /* Margin bottom */
+    text-align: center; /* Center align text */
+    color: #333; /* Text color */
+    background-color: #007bff; /* Background color */
+    padding: 40px 0; /* Padding */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Margin bottom */
+}
+
+label {
+    font-weight: bold; /* Bold font weight */
+    color: #333; /* Text color */
+    display: block; /* Block display */
+    margin-bottom: 5px; /* Margin bottom */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding */
+    box-sizing: border-box; /* Box sizing */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Border radius */
+    transition: border-color 0.3s; /* Transition effect */
+    font-size: 16px; /* Font size */
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    border-color: #999; /* Border color on hover */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Background color */
+    color: #fff; /* Text color */
+    padding: 15px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Cursor pointer */
+    transition: background-color 0.3s; /* Transition effect */
+    width: 100%; /* Full width */
+    font-size: 18px; /* Font size */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Background color on hover */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resize */
+    min-height: 100px; /* Minimum height */
+    max-height: 300px; /* Maximum height */
+}
+
+/* Hide the default radio buttons */
+input[type="radio"] {
+    display: none; /* Hide radio buttons */
+}
+
+/* Style for the custom radio buttons */
+input[type="radio"] + label {
+    display: inline-block; /* Inline-block display */
+    position: relative; /* Positioning */
+    padding-left: 30px; /* Padding left */
+    margin-right: 20px; /* Margin right */
+    cursor: pointer; /* Cursor pointer */
+    font-size: 15px; /* Font size */
+    line-height: 1.5; /* Line height */
+    color: #333; /* Text color */
+}
+
+/* Custom radio button */
+input[type="radio"] + label:before {
+    content: ''; /* Empty content */
+    position: absolute; /* Positioning */
+    left: 0; /* Position left */
+    top: 50%; /* Position top */
+    transform: translateY(-50%); /* Vertical centering */
+    width: 13px; /* Width */
+    height: 13px; /* Height */
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 50%; /* Border radius */
+    background-color: #fff; /* Background color */
+}
+
+/* Custom radio button checked state */
+input[type="radio"]:checked + label:before {
+    background-color: #007bff; /* Fill color when checked */
+}
+
+#satisfaction {
+    display: flex;
+    list-style-type: none;
+}
